@@ -19,6 +19,10 @@ jobs:
           name: Gradle build
           command: |
             echo "Hello World!"
+          filters:
+            branches:
+              only:
+                - master
 workflows:
   version: 2
   pr-check-workflow:
@@ -27,3 +31,4 @@ workflows:
   build:
     jobs:
     - build
+    
