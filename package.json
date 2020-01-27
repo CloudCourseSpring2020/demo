@@ -1,0 +1,15 @@
+{
+  "name": "cloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "jest": "^25.1.0"
+  }
+}
