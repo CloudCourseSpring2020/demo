@@ -18,12 +18,12 @@ jobs:
       - run:
           name: Gradle build
           command: |
-            echo "Hello World!"
+            echo "He World!"
 workflows:
   version: 2
   pr-check-workflow:
     jobs:
-    - pr_check
+      - pr_check
   build:
     jobs:
-    - build
+      - build
