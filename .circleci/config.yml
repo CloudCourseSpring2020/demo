@@ -2,6 +2,9 @@
 version: 2
 jobs:
   pr_check_workflow:
+    branches:
+      ignore:
+      - master
     docker:
       - image: circleci/node:8.10.0
     working_directory: ~/repo
@@ -24,10 +27,9 @@ jobs:
       # run tests!
       - run: npm test
   build:
-    filters:
-      branches:
-        only:
-        - master
+    branches:
+      only:
+      - master
     docker:
       - image: circleci/node:8.10.0
     working_directory: ~/repo
@@ -49,12 +51,5 @@ jobs:
 
       # run tests!
       - run: npm test
-workflows:
-  version: 2
-  pr-check-workflow:
-    jobs:
-    - pr_check_workflow
-  build:
-    jobs:
-    - build
+
 
