@@ -27,7 +27,7 @@ jobs:
     filters:
       branches:
         only:
-        -master
+        - master
     docker:
       - image: circleci/node:8.10.0
     working_directory: ~/repo
@@ -60,5 +60,5 @@ workflows:
      filters:
       branches:
         only:
-        -master
+        - master
 
