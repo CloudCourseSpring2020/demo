@@ -49,4 +49,12 @@ jobs:
       # run tests!
       - run: npm test
 
+workflows:
+  version: 2
+  pr-check-workflow:
+    jobs:
+    - pr_check_workflow
+  build:
+    jobs:
+    - build
 
