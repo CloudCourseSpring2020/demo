@@ -1,7 +1,7 @@
 ---
 version: 2
 jobs:
-  pr-check-workflow:
+  pr_check_workflow:
     docker:
       - image: circleci/node:8.10.0
     working_directory: ~/repo
@@ -45,4 +45,12 @@ jobs:
 
       # run tests!
       - run: npm test
+workflows:
+  version: 2
+  pr-check-workflow:
+    jobs:
+      - pr_check_workflow
+  build:
+    jobs:
+      - build
 
