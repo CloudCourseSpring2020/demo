@@ -1,28 +1,29 @@
 {
-  "name": "demo",
+  "name": "clooud_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "web app",
   "main": "index.js",
-  "dependencies": {
-    "enzyme": "^3.11.0",
-    "jest": "^25.1.0"
-  },
-  "devDependencies": {
-    "enzyme": "^3.11.0",
-    "jest": "^25.1.0"
-  },
   "scripts": {
     "build":"npm install",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apurva1611/demo.git"
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/apurva1611/demo/issues"
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "mocha": "^7.0.1",
+    "mysql": "^2.17.1",
+    "password-validator": "^5.0.3",
+    "uuidv4": "^6.0.2"
   },
-  "homepage": "https://github.com/apurva1611/demo#readme"
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0"
+  }
 }
