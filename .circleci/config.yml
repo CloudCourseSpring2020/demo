@@ -4,6 +4,7 @@ jobs:
   pr_check_workflow:
     docker:
       - image: circleci/node:8.10.0
+      - image: circleci/mysql:8.0.4
     working_directory: ~/repo
     steps:
       - checkout
