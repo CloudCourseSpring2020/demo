@@ -1,7 +1,7 @@
 ---
 version: 2
 jobs:
-  pr_check_workflow:
+  pr_check:
     docker:
       - image: circleci/node:8.10.0
       - image: circleci/mysql:8.0.4
@@ -53,14 +53,14 @@ jobs:
       - run: npm test
 workflows:
   version: 2
-  pr-check-workflow:
+  pr-check:
     jobs:
-    - pr_check_workflow:
+    - pr_check:
         filters:
           branches:
             ignore:
             - master
-  build:
+  build_deploy:
     jobs:
     - build:
         filters:
