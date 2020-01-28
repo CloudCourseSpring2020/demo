@@ -2,9 +2,6 @@
 version: 2
 jobs:
   pr_check_workflow:
-    branches:
-      ignore:
-      - master
     docker:
       - image: circleci/node:8.10.0
     working_directory: ~/repo
