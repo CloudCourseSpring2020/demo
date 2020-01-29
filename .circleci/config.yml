@@ -49,8 +49,8 @@ workflows:
   version: 2
   pr-check-workflow:
     jobs:
-      - pr_check_workflow
+    - pr_check_workflow
   build:
     jobs:
-      - build
+    - build
 
