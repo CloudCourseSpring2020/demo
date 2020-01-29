@@ -1,0 +1,27 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "enzyme": "^3.11.0",
+    "jest": "^25.1.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "jest": "^25.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apurva1611/demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apurva1611/demo/issues"
+  },
+  "homepage": "https://github.com/apurva1611/demo#readme"
+}
